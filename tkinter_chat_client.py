@@ -1,8 +1,5 @@
 """
-tkinter_chat_client.py
 Chat client - connects to the server and lets you send/receive messages
-this was honestly harder to write than the server lol
-had to figure out the threading stuff for receiving messages
 """
 
 import socket
@@ -64,7 +61,7 @@ class ChatClient:
         self.chat_area.pack(padx=10, pady=5)
 
         # different colors for server vs normal messages
-        # found out how to do this from stackoverflow
+        # found out how to do this from Google
         self.chat_area.tag_config("server", foreground="#808080")
         self.chat_area.tag_config("normal", foreground="#000000")
 
@@ -215,4 +212,3 @@ if __name__ == "__main__":
 # NOTE to self: if you get a weird error about "main thread" something
 # its because youre trying to update tkinter from the wrong thread
 # use the queue!! thats what its there for
-# - me, at 2am debugging this

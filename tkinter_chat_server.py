@@ -1,10 +1,5 @@
 """
-tkinter_chat_server.py
-Multi-client chat server with GUI
-broadcasts messages to all connected clients
-
-I spent way too long getting this to work lol
-the threading part was the hardest for me
+Multi-client chat server with GUI broadcasts messages to all connected clients
 """
 
 import socket
@@ -18,7 +13,7 @@ HOST = '127.0.0.1'
 PORT = 12345
 BUFFER_SIZE = 1024
 
-# i tried using 2048 at first but 1024 seems fine for chat messages
+# 1024 seems fine for chat messages, but if you want to allow larger messages you can increase this
 # BUFFER_SIZE = 2048
 
 
